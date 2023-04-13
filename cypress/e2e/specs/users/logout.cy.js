@@ -3,7 +3,7 @@ describe('logout-tests', () => {
 
     })
 
-    it('change information and button on successful logout', () => {
+    it('changes information and button on successful logout', () => {
         
     })
 })
