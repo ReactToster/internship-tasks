@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('login-tests', () => {
     context('validating web elements', () => {
         it('title Sample App', () => {
