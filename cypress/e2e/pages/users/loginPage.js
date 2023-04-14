@@ -7,11 +7,27 @@ export function validateFormInformation(expectedText) {
 }
 
 export function validateUsernamePlaceholderText(expectedText) {
-    cy.get("[name='UserName']")
+    locateInputByName('UserName')
         .invoke('attr', 'placeholder').should('contain', expectedText)
 }
 
 export function validatePasswordPlaceholderText(expectedText) {
-    cy.get("[name='Password']")
+    locateInputByName('Password')
         .invoke('attr', 'placeholder').should('contain', expectedText)
+}
+
+export function typeTextIntoInput(inputName, text) {
+    locateInputByName(inputName).type(text)
+}
+
+export function clickLoginButton() {
+    cy.get('#login').click()
+}
+
+export function validateErrorMessage(expectedText) {
+    cy.get('#loginstatus').should('have.text', expectedText)
+}
+
+function locateInputByName(inputNameAtrribute) {
+    return cy.get(`[name='${inputNameAtrribute}']`)
 }
