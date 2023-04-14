@@ -1,9 +1,9 @@
-import { navigate } from "../../pages/shared/basicPage"
+import { mockData, navigate } from "../../pages/shared/basicPage"
 import { validateHamburgerIconIsNotVisible, validateHamburgerIconIsVisible, validateLogoHref } from "../../pages/shared/headerPage"
 
 describe('header-tests', () => {
     beforeEach(() => {
-        navigate("http://uitestingplayground.com/sampleapp")
+        navigate()
     })
 
     it('logo navigates on click to /', () => {

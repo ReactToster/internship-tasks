@@ -1,7 +1,14 @@
-export function navigate(url) {
-    cy.visit(url)
+
+export function navigate() {
+    cy.fixture('mock-data').then((mockData) => {
+        cy.visit(mockData.homePageUrl)
+    }) 
 }
 
 export function locateInputByName(inputNameAtrribute) {
     return cy.get(`[name='${inputNameAtrribute}']`)
+}
+
+export function mockData() {
+      
 }

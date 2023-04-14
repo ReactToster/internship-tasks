@@ -6,7 +6,7 @@ import { validateWelcomeMessage } from "../../pages/users/logoutPage"
 
 describe('login-tests', () => {
     beforeEach(() => {
-        navigate("http://uitestingplayground.com/sampleapp")
+        navigate()
     })
 
     context('validating web elements', () => {

@@ -4,7 +4,7 @@ import { clickLogOutButton, validateInputsAreCleared, validateLogOutButton, vali
 
 describe('logout-tests', () => {
     beforeEach(()=> {
-        navigate("http://uitestingplayground.com/sampleapp")
+        navigate()
         typeTextIntoInput('UserName', 'user')
         typeTextIntoInput('Password', 'pwd')
         cy.login()
