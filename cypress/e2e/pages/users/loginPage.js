@@ -1,3 +1,5 @@
+import { locateInputByName } from "../shared/basicPage"
+
 export function validateTitle(expectedTitle) {
     cy.get('h3').should('have.text', expectedTitle)
 }
@@ -28,6 +30,3 @@ export function validateErrorMessage(expectedText) {
     cy.get('#loginstatus').should('have.text', expectedText)
 }
 
-function locateInputByName(inputNameAtrribute) {
-    return cy.get(`[name='${inputNameAtrribute}']`)
-}
