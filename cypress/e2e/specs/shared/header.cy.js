@@ -1,4 +1,4 @@
-import { mockData, navigate } from "../../pages/shared/basicPage"
+import { navigate } from "../../pages/shared/basicPage"
 import { validateHamburgerIconIsNotVisible, validateHamburgerIconIsVisible, validateLogoHref } from "../../pages/shared/headerPage"
 
 describe('header-tests', () => {

@@ -14,7 +14,7 @@ describe('logout-tests', () => {
         validateLogOutButton()
     })
 
-    it('changes information and button on successful logout', () => {
+    it('changes information on successful logout', () => {
         clickLogOutButton()
 
         validateLogOutMessage()
